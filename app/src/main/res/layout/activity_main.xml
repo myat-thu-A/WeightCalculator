@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Weight Calculator"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:fontFamily="@font/lobster"
+        android:background="#7ab0eb"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+        <RadioButton
+            android:id="@+id/rbKg2Lb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kg to Lb"
+            android:checked="true"
+            android:fontFamily="@font/lobster"
+            />
+
+        <RadioButton
+            android:id="@+id/rbLb2Kg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lb to Kg"
+            android:fontFamily="@font/lobster"
+            />
+        
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your weight"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/lobster"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        >
+
+        <Button
+            android:id="@+id/btConvert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Convert"
+            android:fontFamily="@font/lobster"
+            />
+
+        <Button
+            android:id="@+id/btClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear"
+            android:fontFamily="@font/lobster"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Result is here"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/lobster"
+        />
+
+    <TextView
+        android:id="@+id/tvThank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25sp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/lobster"
+        android:gravity="center"
+        />
+
+</LinearLayout>
